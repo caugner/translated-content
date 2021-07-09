@@ -1,31 +1,38 @@
 ---
-title: NavigatorOnLine
-slug: Web/API/NavigatorOnLine
+title: NavigatorPlugins
+slug: orphaned/Web/API/NavigatorPlugins
 tags:
   - API
+  - Experimental
   - HTML-DOM
   - NeedsTranslation
   - TopicStub
-translation_of: Web/API/NavigatorOnLine
+translation_of: Web/API/NavigatorPlugins
+original_slug: Web/API/NavigatorPlugins
 ---
-<p>{{APIRef("HTML DOM")}}</p>
+<p>{{APIRef("HTML DOM")}}{{SeeCompatTable}}</p>
 
-<p>The <code><strong>NavigatorOnLine</strong></code> interface contains methods and properties related to the connectivity status of the browser.</p>
+<p>The <code><strong>NavigatorPlugins</strong></code> interface contains methods and properties related to the plugins installed in the browser.</p>
 
-<p>There is no object of type <code>NavigatorOnLine</code>, but other interfaces, like {{domxref("Navigator")}} or {{domxref("WorkerNavigator")}}, implement it.</p>
+<p>There is no object of type <code>NavigatorPlugins</code>, but other interfaces, like {{domxref("Navigator")}}, implement it.</p>
 
 <h2 id="Properties">Properties</h2>
 
-<p><em>The <code>NavigatorOnLine</code></em><em> interface doesn't inherit any property.</em></p>
-
 <dl>
- <dt>{{domxref("NavigatorOnLine.onLine")}} {{readonlyInline}}</dt>
- <dd>Returns a {{domxref("Boolean")}} indicating whether the browser is working online.</dd>
+ <dt>{{domxref("NavigatorPlugins.mimeTypes")}} {{readonlyInline}}{{experimental_inline}}</dt>
+ <dd>Returns an {{domxref("MimeTypeArray")}} listing the MIME types supported by the browser.</dd>
+ <dt>{{domxref("NavigatorPlugins.plugins")}} {{readonlyInline}}{{experimental_inline}}</dt>
+ <dd>Returns a {{domxref("PluginArray")}} listing the plugins installed in the browser.</dd>
 </dl>
 
 <h2 id="Methods">Methods</h2>
 
-<p><em>The </em><em><code>NavigatorOnLine</code></em><em> interface neither implements, nor inherit any method.</em></p>
+<p><em>The <code>NavigatorPlugins</code></em><em> interface doesn't inherit any method.</em></p>
+
+<dl>
+ <dt>{{domxref("NavigatorPlugins.javaEnabled")}} {{readonlyInline}}{{experimental_inline}}</dt>
+ <dd>Returns a {{domxref("Boolean")}} flag indicating whether the host browser is Java-enabled or not.</dd>
+</dl>
 
 <h2 id="Specifications">Specifications</h2>
 
@@ -39,14 +46,9 @@ translation_of: Web/API/NavigatorOnLine
  </thead>
  <tbody>
   <tr>
-   <td>{{SpecName('HTML WHATWG', '#navigatoronline', 'NavigatorOnLine')}}</td>
+   <td>{{SpecName('HTML WHATWG', '#navigatorplugins', 'NavigatorPlugins')}}</td>
    <td>{{Spec2('HTML WHATWG')}}</td>
-   <td>No change from the latest snapshot, {{SpecName('HTML5 W3C')}}</td>
-  </tr>
-  <tr>
-   <td>{{SpecName('HTML5 W3C', '#navigatoronline', 'NavigatorOnLine')}}</td>
-   <td>{{Spec2('HTML5 W3C')}}</td>
-   <td>Snapshot of {{SpecName('HTML WHATWG')}} with its initial specification.</td>
+   <td>Initial definition.</td>
   </tr>
  </tbody>
 </table>
@@ -74,14 +76,6 @@ translation_of: Web/API/NavigatorOnLine
    <td>{{CompatVersionUnknown}}</td>
    <td>{{CompatVersionUnknown}}</td>
   </tr>
-  <tr>
-   <td>on {{domxref("WorkerNavigator")}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatGeckoDesktop(29)}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-  </tr>
  </tbody>
 </table>
 </div>
@@ -106,15 +100,6 @@ translation_of: Web/API/NavigatorOnLine
    <td>{{CompatVersionUnknown}}</td>
    <td>{{CompatVersionUnknown}}</td>
    <td>{{CompatVersionUnknown}}</td>
-  </tr>
-  <tr>
-   <td>on {{domxref("WorkerNavigator")}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatGeckoMobile(29)}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
-   <td>{{CompatUnknown}}</td>
   </tr>
  </tbody>
 </table>
